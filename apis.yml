@@ -1,7 +1,26 @@
 aid: scout
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scout.png
 name: Scout
-description: Scout is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Scout (Scout Space) is a Techstars- and venture-backed space technology company founded in
+  2019 that builds next-generation orbital sensing and autonomy for Space Domain Awareness (SDA). Its
+  in-space products, first launched in 2021, let spacecraft see and understand objects around them
+  through electro-optical and infrared sensors (the Owl long-range SDA sensor line), edge processing
+  hardware, mission autonomy software developed with the U.S. Space Force, and mission-design analysis.
+  Scout supplies cross-orbit intelligence and dynamic space operations to government and commercial
+  operators and has been awarded multiple AFWERX SBIR and USSF TACFI contracts. Scout does not publish a
+  public developer API, SDK, or developer portal; this profile captures its identity and domain-security
+  posture for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/scout/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Space
+- Aerospace
+- Satellite
+- Space Domain Awareness
+- Defense
+- Sensors
+- Autonomy
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/scout-domain-security.yml
 - type: Website
   url: https://scout.space/
+- type: PrivacyPolicy
+  url: https://www.scout.space/privacy
+- type: TermsOfService
+  url: https://www.scout.space/terms
+- type: Company
+  url: https://www.linkedin.com/company/scoutdotspace
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
